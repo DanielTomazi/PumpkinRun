@@ -1,0 +1,178 @@
+
+.contagem_game{
+  margin-top: 20vh;
+  text-align: center;
+}
+
+
+.personagem_pk {
+  position: absolute;
+  opacity: 0;
+  bottom: 0px;
+  left: 40px;
+  width: 75px;
+  height: 100px;
+  background-image: url(../pk_andando.png);
+  background-repeat: no-repeat;
+  animation: animacao_pk 0.5s steps(8) infinite;
+  transition: 1s;
+}
+
+@keyframes animacao_pk {
+  from { background-position: 0px 0; }
+  to { background-position: 0px -795px; }
+}
+
+
+.personagem_ht {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 82px;
+  height: 100px;
+  background-image: url(../img/assets/assets_ht/animacoes/ht_andando.png);
+  background-repeat: no-repeat;
+  animation: andar_ht 0.5s steps(10) infinite;
+  transform: scaleX(-1);
+  display: none;
+  opacity: 0;
+}
+
+@keyframes andar_ht {
+  from { background-position: 0px 0; }
+  to { background-position: 0px -1000px; }
+}
+
+.personagem_nj {
+  position: absolute;
+  bottom: 95px;
+  right: 0px;
+  width: 98px;
+  height: 100px;
+  background-image: url(../img/assets/assets_nj/animacoes/spritesheet.png);
+  background-repeat: no-repeat;
+  animation: andar_hj 0.5s steps(10) infinite;
+  transform: scaleX(-1);
+  display: none;
+  opacity: 0;
+}
+
+@keyframes andar_nj {
+  from { background-position: 0px 0; }
+  to { background-position: 0px -1000px; }
+}
+
+
+.pontuacao_game {
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+  position: absolute;
+  top: 5vh;
+  left: 0px;
+  height: 80px;
+  width: 130px;
+  background-color: rgba(0, 0, 0, 0.671);
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  justify-content: center;    
+  box-shadow: 5px 4px 5px 5px black;
+}
+
+
+  .tela_fim_jogo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 166, 0, 0.493);
+    color: black;
+    width: 80%;
+    max-width: 500px;
+    height: 40vh;
+    align-items: center;
+    display: none;
+    flex-direction: column;
+    border: 5px solid black;
+    box-shadow: 5px 5px 15px 5px black;
+  }
+
+  .tutorial_container {
+    text-align: center;
+    margin-top: 10%;
+  }
+
+  .escritos_gameOver {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 50%;
+    width: 100%;
+  }
+
+  .escritos_gameOver > h1, .escritos_gameOver > h3, .escritos_gameOver > p {
+    width: 100%;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+
+  }
+
+  .tela_fim_jogo > h3 {
+    font-size: 16px;
+
+  }
+
+  .escritos_gameOver > p {
+    font-size: 15px;
+  }
+
+  .btt_gameOver {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;      
+    height: 50%;
+  }
+
+
+
+  .restart_btt, .home_btt {
+    
+    width: 30%;
+    max-width: 100px;
+    height: 50%;
+    background-color: orange;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 5px 0px black; 
+  }
+
+  .restart_btt > img, .home_btt > img {
+    
+    max-height: 60px;
+  }
+
+  .restart_btt:hover, .home_btt:hover {
+    background-color: rgb(197, 121, 7);
+    box-shadow: 0px 0px 5px 2px black;
+  }
+
+  .btt_gameOver > input:hover {
+      background-color: rgb(187, 121, 0);
+  } 
+
+
+  audio {
+    display: none;
+  }
+
+
+  @media (min-height: 600px){
+      .escritos_gameOver {
+        margin-top: 5%;
+      }
+
+  }
