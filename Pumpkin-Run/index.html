@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pumpkin Run, um jogo 2D endless runne desenvolvido em HTML, CSS e JS para agregar ao meu portfolio">
- 
+    <meta name="description"
+        content="Pumpkin Run, um jogo 2D endless runne desenvolvido em HTML, CSS e JS para agregar ao meu portfolio">
+
     <title>Pumpkin Run</title>
 
     <link rel="icon" href="img/assets/icon_html.png">
@@ -14,23 +16,25 @@
 </head>
 
 
-<body> 
-    
+<body>
+
     <section class="menu">
-    <p style="text-align: center;">pressione "ESC" para sair do modo tela cheia se estiver no computador</p>
-    <div class="titulo_menu">
-    <h1>PUMPKIN RUN</h1>
-    <a href="https://www.linkedin.com/in/daniel-tomazi/"><h5 class="creditos_daniel">Desenvolvido por: Daniel Tomazi</h5></a>
-    </div> <!--titulo_menu-->
+        <p style="text-align: center;">pressione "ESC" para sair do modo tela cheia se estiver no computador</p>
+        <div class="titulo_menu">
+            <h1>PUMPKIN RUN</h1>
+            <a href="https://www.linkedin.com/in/daniel-tomazi/">
+                <h5 class="creditos_daniel">Desenvolvido por: Daniel Tomazi</h5>
+            </a>
+        </div> <!--titulo_menu-->
 
 
-    <img src="img/menu/btt_play.png" alt="" srcset="" class="btt_play_menu">
+        <img src="img/menu/btt_play.png" alt="" srcset="" class="btt_play_menu">
 
-    <div class="persons_menu">
-        <img src="Idle1.png" alt="" class="persons" srcset="">
-        <img src="img/assets/assets_ht/animacoes/Idle__001.png" alt="" class="persons"  srcset="">
-        
-    </div><!--persons_menu-->
+        <div class="persons_menu">
+            <img src="Idle1.png" alt="" class="persons" srcset="">
+            <img src="img/assets/assets_ht/animacoes/Idle__001.png" alt="" class="persons" srcset="">
+
+        </div><!--persons_menu-->
     </section><!--menu-->
 
 
@@ -48,27 +52,47 @@
             <p class="tutorial">PULAR</p>
             <p class="tutorial">Espaço / Toque na tela</p>
         </div>
-        
-       
+
+
 
         <div class="tela_fim_jogo">
-
-            <div class="escritos_gameOver">
-                    <h1> FINALMENTE PUMPKIN FOI CAPTURADO</h1>
-                    <h3 class="pontuacao_final">Fugiu por: 0 metros</h3>
-                    <p class="maiorPontuacao">Mas já me disseram que seu maior recorde foi de: 0 metros</p>
+            <div id="form-wrap">
+                <div id="text-wrap">
+                    <h2>Novo recorde!</h2>
+                    <p>Gostaria de compartilhar seu score com outros jogadores?</p>
+                    <div class="open-rank">
+                        <button onclick="fecharForm()">Agora não</button>
+                        <button onclick="abrirForm()">Sim, quero!</button>
+                    </div>
+                </div>
+                <form onsubmit="registrarPontuacao(event)" id="form-ranking">
+                    <fieldset>
+                        <label for="nome">Seu nome</label>
+                        <input type="text" name="nome" id="nome">
+                        <span id="error"></span>
+                    </fieldset>
+                    <input type="submit" placeholder="Enviar">
+                    <span id="success"></span>
+                </form>
             </div>
-            
-            <div class="btt_gameOver">
 
-            <div class="home_btt"><img src="img/assets/others/home.png" alt="" srcset="" style="height: 80%;"></div>
-            <div class="restart_btt"><img src="img/assets/others/return.png" alt="" srcset="" style="height: 80%";></div>
+            <div class="escritos_gameOver" id="game-over">
+                <h2> FINALMENTE PUMPKIN FOI CAPTURADO</h2>
+                <h3 class="pontuacao_final">Fugiu por: 0 metros</h3>
+                <p class="maiorPontuacao">Mas já me disseram que seu maior recorde foi de: 0 metros</p>
+                <div class="btt_gameOver">
 
+                    <div class="home_btt"><img src="img/assets/others/home.png" alt="" srcset="" style="height: 80%;">
+                    </div>
+                    <div class="restart_btt"><img src="img/assets/others/return.png" alt="" srcset=""
+                            style="height: 80%" ;>
+                    </div>
+
+                </div>
             </div>
-
 
         </div> <!--tela_fim_jogo-->
-       
+
         <div class="personagem_pk"></div>
         <div class="personagem_ht"></div>
         <div class="personagem_nj"></div>
@@ -78,4 +102,5 @@
 </body>
 <script src="jquery.js"></script>
 <script src="menu.js"></script>
+
 </html>

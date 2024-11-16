@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     font-family: 'Acme', sans-serif;
     cursor: url('../img/assets/cursor.png'), auto;
-    color: orange;
 }
 
-.game   {
+.game {
     display: none;
 }
+
 body {
     height: 100%;
     background-image: url(../img/menu/png_menu3.png);
@@ -19,6 +20,7 @@ body {
     background-size: cover;
     overflow: hidden;
 }
+
 .menu {
     display: flex;
     flex-direction: column;
@@ -26,13 +28,19 @@ body {
     align-items: center;
 }
 
-.titulo_menu{
+.titulo_menu {
     margin-top: 20vh;
     text-align: center;
 }
-.titulo_menu > h1, .titulo_menu > a{
-   text-shadow: 10px 10px 10px #000, -10px -10px 10px #000, 10px -10px 10px #000, -10px 10px 10px #000;
-   text-decoration: none;
+
+.titulo_menu>h1,
+.titulo_menu>a {
+    text-shadow: 10px 10px 10px #000, -10px -10px 10px #000, 10px -10px 10px #000, -10px 10px 10px #000;
+    text-decoration: none;
+}
+
+.creditos_daniel {
+    color: orange;
 }
 
 .creditos_daniel:hover {
@@ -41,19 +49,21 @@ body {
 }
 
 h1 {
-    font-size: 80px
+    font-size: 80px;
+    color: orange
 }
+
 .btt_play_menu {
-    margin-top: 5vh;    
+    margin-top: 5vh;
     height: 10vh;
     transition: 0.4s;
 }
 
-    .btt_play_menu:hover {
-       scale: 1.2;
-    }
+.btt_play_menu:hover {
+    scale: 1.2;
+}
 
-.persons_menu{
+.persons_menu {
     position: absolute;
     display: flex;
     bottom: 0px;
@@ -66,16 +76,18 @@ h1 {
 }
 
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 500px) {
     h1 {
         font-size: 50px;
     }
 }
-@media only screen and (max-height: 500px){
-.persons{
-    height: 100px;
-}
-.persons_menu{
-    width: 80%;
-}
+
+@media only screen and (max-height: 500px) {
+    .persons {
+        height: 100px;
+    }
+
+    .persons_menu {
+        width: 80%;
+    }
 }
