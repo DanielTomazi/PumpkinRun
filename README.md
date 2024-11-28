@@ -1,17 +1,17 @@
 # PumpkinRun Game
-Clique aqui para testar o jogo --> https://pumpkin-run.vercel.app
+Click here to test the game: https://pumpkin-run.vercel.app
 
 ![menu](https://github.com/DanielTomazi/PumpkinRun/blob/main/ImagensPumpkinDemo/menu-demo.png)
 *************
-Sabe quando você está sem conexão de internet e logo aparece aquele game do dinossauro que salta obstáculos? Pumpkin game é um jogo que fiz tendo ele como inspiração, criado utilizando Jquery, JavaScript, HTML/CSS, o jogo consiste em percorrer a maior distância possível sem ser atingido por seus adversários que irão de encontro com você.
+Do you know when you're offline, and that dinosaur game appears with the jumping obstacles? The Pumpkin Game is a game I created inspired by that, using jQuery, JavaScript, HTML/CSS. The game consists of traveling as far as possible without being hit by enemies that come toward you.
+***
+In the game, there are both ground and flying enemies, which increases the difficulty level as you need to overcome obstacles on the screen.
 *************
-No game há inimigos tanto terrestres quanto voadores, criando assim um maior nível de dificuldade se tratando de ter que superar os obstáculos na tela.
-*************
-Inimigos terrestres:
+Ground Enemies:
 
 ![terra](https://github.com/DanielTomazi/PumpkinRun/blob/main/ImagensPumpkinDemo/inimigoterrestre-demo.png)
 *************
-Inimigos aéreos
+Fly Enemies
 
 ![ar](https://github.com/DanielTomazi/PumpkinRun/blob/main/ImagensPumpkinDemo/ninjavoador-demo.png)
 
